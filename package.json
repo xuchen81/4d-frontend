@@ -1,0 +1,13 @@
+{
+  "name": "4d-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xuchen81/4d-frontend.git",
+  "author": "Petit Kero Pro <bigboss@hidoge.cn>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma-extensions": "^2.2.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
+}
