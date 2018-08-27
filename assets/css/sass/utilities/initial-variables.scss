@@ -22,6 +22,8 @@ $cyan: hsl(204, 86%, 53%) !default;
 $blue: hsl(217, 71%, 53%) !default;
 $purple: hsl(271, 100%, 71%) !default;
 $red: hsl(348, 100%, 61%) !default;
+$m-yellow:                  #F3B949;
+$m-orange:                  #F18443;
 
 // Typography
 
@@ -64,8 +66,8 @@ $fullhd: 1344px + 2 * $gap !default;
 
 $easing: ease-out !default;
 $radius-small: 2px !default;
-$radius: 0 !default;
-$radius-large: 0 !default;
+$radius: 4px !default;
+$radius-large: 8px !default;
 $radius-rounded: 290486px !default;
 $speed: 86ms !default;
 

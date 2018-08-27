@@ -1,8 +1,8 @@
-$primary: $turquoise !default;
+$primary: $m-yellow !default;
 
 $info: $cyan !default;
 $success: $green !default;
-$warning: $yellow !default;
+$warning: $m-orange !default;
 $danger: $red !default;
 
 $light: $white-ter !default;
@@ -10,19 +10,21 @@ $dark: $grey-darker !default;
 
 // Invert colors
 
-$orange-invert: findColorInvert($orange) !default;
-$yellow-invert: findColorInvert($yellow) !default;
+$orange-invert: findColorInvert($m-orange) !default;
+$yellow-invert: findColorInvert($m-yellow) !default;
 $green-invert: findColorInvert($green) !default;
 $turquoise-invert: findColorInvert($turquoise) !default;
 $cyan-invert: findColorInvert($cyan) !default;
 $blue-invert: findColorInvert($blue) !default;
 $purple-invert: findColorInvert($purple) !default;
 $red-invert: findColorInvert($red) !default;
+$m-yellow-invert: findColorInvert($m-yellow) !default;
+$m-orange-invert: findColorInvert($m-orange) !default;
 
-$primary-invert: $turquoise-invert !default;
+$primary-invert: $m-yellow-invert !default;
 $info-invert: $cyan-invert !default;
 $success-invert: $green-invert !default;
-$warning-invert: $yellow-invert !default;
+$warning-invert: $m-orange-invert !default;
 $danger-invert: $red-invert !default;
 $light-invert: $dark !default;
 $dark-invert: $light !default;
@@ -31,7 +33,7 @@ $dark-invert: $light !default;
 
 $background: $grey-dark !default;
 
-$border: $grey-lighter !default;
+$border: $grey-light !default;
 $border-hover: $grey-light !default;
 
 // Text colors
@@ -51,7 +53,7 @@ $pre-background: $background !default;
 
 // Link colors
 
-$link: $blue !default;
+$link: $white-ter !default;
 $link-invert: $blue-invert !default;
 $link-visited: $purple !default;
 
