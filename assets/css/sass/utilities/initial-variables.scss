@@ -6,11 +6,11 @@ $black-ter: hsl(0, 0%, 14%) !default;
 
 $grey-darker: #333 !default;
 $grey-dark: hsl(0, 0%, 29%) !default;
-$grey: hsl(0, 0%, 48%) !default;
-$grey-light: #A7A9AC !default;
+$grey: #595a5b !default;
+$grey-light: #a7a9ac !default;
 $grey-lighter: hsl(0, 0%, 86%) !default;
 
-$white-ter: #E5E3E2 !default;
+$white-ter: #e2dedd !default;
 $white-bis: hsl(0, 0%, 98%) !default;
 $white: hsl(0, 0%, 100%) !default;
 
@@ -22,8 +22,11 @@ $cyan: hsl(204, 86%, 53%) !default;
 $blue: hsl(217, 71%, 53%) !default;
 $purple: hsl(271, 100%, 71%) !default;
 $red: hsl(348, 100%, 61%) !default;
-$m-yellow:                  #F3B949;
+$m-yellow:                  #f4bb2a;
 $m-orange:                  #F18443;
+$m-lighter:                  #e2dedd;
+$m-light:                  #a7a9ac;
+$m-dark:                  #595a5b;
 
 // Typography
 

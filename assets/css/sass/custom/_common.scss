@@ -142,8 +142,10 @@ $m-white:                  #ffffff;
 $m-3:                  #333;
 $m-6:                  #666;
 $m-9:                  #A7A9AC;
-$m-light:                  #f5f5f5;
-$m-yellow:                  #F3B949;
+$m-lighter:                  #e2dedd;
+$m-light:                  #a7a9ac;
+$m-dark:                  #595a5b;
+$m-yellow:                  #f4bb2a;
 $m-orange:                  #F18443;
 
 @each $c-name, $color in
