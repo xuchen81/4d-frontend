@@ -11,6 +11,11 @@
 body{
   height: 100vh;
 }
+header{
+  h2{
+    text-shadow: 1px 1px 3px black(.1);
+  }
+}
 .logo{
   width: 150px;
   height: 36px;
@@ -78,6 +83,9 @@ body{
 .operation-area{
   height: 100vh;
   .button-save-view{
+    background: $m-3;
+    color: $m-lighter;
+    border: none;
     left: 2px;
     top: 2px;
     position: absolute;
@@ -94,5 +102,22 @@ body{
     right: 10px;
     bottom: 10px;
     z-index: 2;
+  }
+}
+.layout-box{
+  .thumb{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+    }
+  }
+}
+.collapse-box{
+  .content{
+    background: $m-dark;
   }
 }

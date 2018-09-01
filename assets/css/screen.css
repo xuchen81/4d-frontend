@@ -809,8 +809,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   user-select: none; }
 
 .box {
-  background-color: #595a5b;
-  border-radius: 8px;
+  background-color: #a7a9ac;
+  border-radius: 4px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #e2dedd;
   display: block;
@@ -901,24 +901,24 @@ a.box:active {
       box-shadow: none; }
   .button.is-white {
     background-color: white;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #0a0a0a; }
     .button.is-white:hover, .button.is-white.is-hovered {
       background-color: #f9f9f9;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #0a0a0a; }
     .button.is-white:focus, .button.is-white.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #0a0a0a; }
       .button.is-white:focus:not(:active), .button.is-white.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
     .button.is-white:active, .button.is-white.is-active {
       background-color: #f2f2f2;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #0a0a0a; }
     .button.is-white[disabled] {
       background-color: white;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-white.is-inverted {
       background-color: #0a0a0a;
@@ -927,24 +927,24 @@ a.box:active {
         background-color: black; }
       .button.is-white.is-inverted[disabled] {
         background-color: #0a0a0a;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: white; }
     .button.is-white.is-loading:after {
       border-color: transparent transparent #0a0a0a #0a0a0a !important; }
     .button.is-white.is-outlined {
       background-color: transparent;
-      border-color: white;
+      border-color: #e2dedd;
       color: white; }
       .button.is-white.is-outlined:hover, .button.is-white.is-outlined:focus {
         background-color: white;
-        border-color: white;
+        border-color: #e2dedd;
         color: #0a0a0a; }
       .button.is-white.is-outlined.is-loading:after {
         border-color: transparent transparent white white !important; }
       .button.is-white.is-outlined[disabled] {
         background-color: transparent;
-        border-color: white;
+        border-color: #e2dedd;
         box-shadow: none;
         color: white; }
     .button.is-white.is-inverted.is-outlined {
@@ -961,24 +961,24 @@ a.box:active {
         color: #0a0a0a; }
   .button.is-black {
     background-color: #0a0a0a;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: white; }
     .button.is-black:hover, .button.is-black.is-hovered {
       background-color: #040404;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: white; }
     .button.is-black:focus, .button.is-black.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: white; }
       .button.is-black:focus:not(:active), .button.is-black.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
     .button.is-black:active, .button.is-black.is-active {
       background-color: black;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: white; }
     .button.is-black[disabled] {
       background-color: #0a0a0a;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-black.is-inverted {
       background-color: white;
@@ -987,24 +987,24 @@ a.box:active {
         background-color: #f2f2f2; }
       .button.is-black.is-inverted[disabled] {
         background-color: white;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #0a0a0a; }
     .button.is-black.is-loading:after {
       border-color: transparent transparent white white !important; }
     .button.is-black.is-outlined {
       background-color: transparent;
-      border-color: #0a0a0a;
+      border-color: #e2dedd;
       color: #0a0a0a; }
       .button.is-black.is-outlined:hover, .button.is-black.is-outlined:focus {
         background-color: #0a0a0a;
-        border-color: #0a0a0a;
+        border-color: #e2dedd;
         color: white; }
       .button.is-black.is-outlined.is-loading:after {
         border-color: transparent transparent #0a0a0a #0a0a0a !important; }
       .button.is-black.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #0a0a0a;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #0a0a0a; }
     .button.is-black.is-inverted.is-outlined {
@@ -1021,24 +1021,24 @@ a.box:active {
         color: white; }
   .button.is-light {
     background-color: #e2dedd;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #333; }
     .button.is-light:hover, .button.is-light.is-hovered {
       background-color: #dcd7d6;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #333; }
     .button.is-light:focus, .button.is-light.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #333; }
       .button.is-light:focus:not(:active), .button.is-light.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(226, 222, 221, 0.25); }
     .button.is-light:active, .button.is-light.is-active {
       background-color: #d6d1cf;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #333; }
     .button.is-light[disabled] {
       background-color: #e2dedd;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-light.is-inverted {
       background-color: #333;
@@ -1047,7 +1047,7 @@ a.box:active {
         background-color: #262626; }
       .button.is-light.is-inverted[disabled] {
         background-color: #333;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #e2dedd; }
     .button.is-light.is-loading:after {
@@ -1081,24 +1081,24 @@ a.box:active {
         color: #333; }
   .button.is-dark {
     background-color: #333;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #e2dedd; }
     .button.is-dark:hover, .button.is-dark.is-hovered {
       background-color: #2d2d2d;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #e2dedd; }
     .button.is-dark:focus, .button.is-dark.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #e2dedd; }
       .button.is-dark:focus:not(:active), .button.is-dark.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(51, 51, 51, 0.25); }
     .button.is-dark:active, .button.is-dark.is-active {
       background-color: #262626;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #e2dedd; }
     .button.is-dark[disabled] {
       background-color: #333;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-dark.is-inverted {
       background-color: #e2dedd;
@@ -1107,24 +1107,24 @@ a.box:active {
         background-color: #d6d1cf; }
       .button.is-dark.is-inverted[disabled] {
         background-color: #e2dedd;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #333; }
     .button.is-dark.is-loading:after {
       border-color: transparent transparent #e2dedd #e2dedd !important; }
     .button.is-dark.is-outlined {
       background-color: transparent;
-      border-color: #333;
+      border-color: #e2dedd;
       color: #333; }
       .button.is-dark.is-outlined:hover, .button.is-dark.is-outlined:focus {
         background-color: #333;
-        border-color: #333;
+        border-color: #e2dedd;
         color: #e2dedd; }
       .button.is-dark.is-outlined.is-loading:after {
         border-color: transparent transparent #333 #333 !important; }
       .button.is-dark.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #333;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #333; }
     .button.is-dark.is-inverted.is-outlined {
@@ -1141,24 +1141,24 @@ a.box:active {
         color: #e2dedd; }
   .button.is-primary {
     background-color: #f4bb2a;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: rgba(0, 0, 0, 0.7); }
     .button.is-primary:hover, .button.is-primary.is-hovered {
       background-color: #f3b71e;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: rgba(0, 0, 0, 0.7); }
     .button.is-primary:focus, .button.is-primary.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: rgba(0, 0, 0, 0.7); }
       .button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(244, 187, 42, 0.25); }
     .button.is-primary:active, .button.is-primary.is-active {
       background-color: #f3b312;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: rgba(0, 0, 0, 0.7); }
     .button.is-primary[disabled] {
       background-color: #f4bb2a;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-primary.is-inverted {
       background-color: rgba(0, 0, 0, 0.7);
@@ -1167,24 +1167,24 @@ a.box:active {
         background-color: rgba(0, 0, 0, 0.7); }
       .button.is-primary.is-inverted[disabled] {
         background-color: rgba(0, 0, 0, 0.7);
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #f4bb2a; }
     .button.is-primary.is-loading:after {
       border-color: transparent transparent rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) !important; }
     .button.is-primary.is-outlined {
       background-color: transparent;
-      border-color: #f4bb2a;
+      border-color: #e2dedd;
       color: #f4bb2a; }
       .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
         background-color: #f4bb2a;
-        border-color: #f4bb2a;
+        border-color: #e2dedd;
         color: rgba(0, 0, 0, 0.7); }
       .button.is-primary.is-outlined.is-loading:after {
         border-color: transparent transparent #f4bb2a #f4bb2a !important; }
       .button.is-primary.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #f4bb2a;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #f4bb2a; }
     .button.is-primary.is-inverted.is-outlined {
@@ -1201,24 +1201,24 @@ a.box:active {
         color: rgba(0, 0, 0, 0.7); }
   .button.is-link {
     background-color: #e2dedd;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #fff; }
     .button.is-link:hover, .button.is-link.is-hovered {
       background-color: #dcd7d6;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-link:focus, .button.is-link.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
       .button.is-link:focus:not(:active), .button.is-link.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(226, 222, 221, 0.25); }
     .button.is-link:active, .button.is-link.is-active {
       background-color: #d6d1cf;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-link[disabled] {
       background-color: #e2dedd;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-link.is-inverted {
       background-color: #fff;
@@ -1227,7 +1227,7 @@ a.box:active {
         background-color: #f2f2f2; }
       .button.is-link.is-inverted[disabled] {
         background-color: #fff;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #e2dedd; }
     .button.is-link.is-loading:after {
@@ -1261,24 +1261,24 @@ a.box:active {
         color: #fff; }
   .button.is-info {
     background-color: #209cee;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #fff; }
     .button.is-info:hover, .button.is-info.is-hovered {
       background-color: #1496ed;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-info:focus, .button.is-info.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
       .button.is-info:focus:not(:active), .button.is-info.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
     .button.is-info:active, .button.is-info.is-active {
       background-color: #118fe4;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-info[disabled] {
       background-color: #209cee;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-info.is-inverted {
       background-color: #fff;
@@ -1287,24 +1287,24 @@ a.box:active {
         background-color: #f2f2f2; }
       .button.is-info.is-inverted[disabled] {
         background-color: #fff;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #209cee; }
     .button.is-info.is-loading:after {
       border-color: transparent transparent #fff #fff !important; }
     .button.is-info.is-outlined {
       background-color: transparent;
-      border-color: #209cee;
+      border-color: #e2dedd;
       color: #209cee; }
       .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
         background-color: #209cee;
-        border-color: #209cee;
+        border-color: #e2dedd;
         color: #fff; }
       .button.is-info.is-outlined.is-loading:after {
         border-color: transparent transparent #209cee #209cee !important; }
       .button.is-info.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #209cee;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #209cee; }
     .button.is-info.is-inverted.is-outlined {
@@ -1321,24 +1321,24 @@ a.box:active {
         color: #fff; }
   .button.is-success {
     background-color: #23d160;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #fff; }
     .button.is-success:hover, .button.is-success.is-hovered {
       background-color: #22c65b;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-success:focus, .button.is-success.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
       .button.is-success:focus:not(:active), .button.is-success.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25); }
     .button.is-success:active, .button.is-success.is-active {
       background-color: #20bc56;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-success[disabled] {
       background-color: #23d160;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-success.is-inverted {
       background-color: #fff;
@@ -1347,24 +1347,24 @@ a.box:active {
         background-color: #f2f2f2; }
       .button.is-success.is-inverted[disabled] {
         background-color: #fff;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #23d160; }
     .button.is-success.is-loading:after {
       border-color: transparent transparent #fff #fff !important; }
     .button.is-success.is-outlined {
       background-color: transparent;
-      border-color: #23d160;
+      border-color: #e2dedd;
       color: #23d160; }
       .button.is-success.is-outlined:hover, .button.is-success.is-outlined:focus {
         background-color: #23d160;
-        border-color: #23d160;
+        border-color: #e2dedd;
         color: #fff; }
       .button.is-success.is-outlined.is-loading:after {
         border-color: transparent transparent #23d160 #23d160 !important; }
       .button.is-success.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #23d160;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #23d160; }
     .button.is-success.is-inverted.is-outlined {
@@ -1381,24 +1381,24 @@ a.box:active {
         color: #fff; }
   .button.is-warning {
     background-color: #F18443;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #fff; }
     .button.is-warning:hover, .button.is-warning.is-hovered {
       background-color: #f07c37;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-warning:focus, .button.is-warning.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
       .button.is-warning:focus:not(:active), .button.is-warning.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(241, 132, 67, 0.25); }
     .button.is-warning:active, .button.is-warning.is-active {
       background-color: #ef742b;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-warning[disabled] {
       background-color: #F18443;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-warning.is-inverted {
       background-color: #fff;
@@ -1407,24 +1407,24 @@ a.box:active {
         background-color: #f2f2f2; }
       .button.is-warning.is-inverted[disabled] {
         background-color: #fff;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #F18443; }
     .button.is-warning.is-loading:after {
       border-color: transparent transparent #fff #fff !important; }
     .button.is-warning.is-outlined {
       background-color: transparent;
-      border-color: #F18443;
+      border-color: #e2dedd;
       color: #F18443; }
       .button.is-warning.is-outlined:hover, .button.is-warning.is-outlined:focus {
         background-color: #F18443;
-        border-color: #F18443;
+        border-color: #e2dedd;
         color: #fff; }
       .button.is-warning.is-outlined.is-loading:after {
         border-color: transparent transparent #F18443 #F18443 !important; }
       .button.is-warning.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #F18443;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #F18443; }
     .button.is-warning.is-inverted.is-outlined {
@@ -1441,24 +1441,24 @@ a.box:active {
         color: #fff; }
   .button.is-danger {
     background-color: #ff3860;
-    border-color: transparent;
+    border-color: #e2dedd;
     color: #fff; }
     .button.is-danger:hover, .button.is-danger.is-hovered {
       background-color: #ff2b56;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-danger:focus, .button.is-danger.is-focused {
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
       .button.is-danger:focus:not(:active), .button.is-danger.is-focused:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25); }
     .button.is-danger:active, .button.is-danger.is-active {
       background-color: #ff1f4b;
-      border-color: transparent;
+      border-color: #e2dedd;
       color: #fff; }
     .button.is-danger[disabled] {
       background-color: #ff3860;
-      border-color: transparent;
+      border-color: #e2dedd;
       box-shadow: none; }
     .button.is-danger.is-inverted {
       background-color: #fff;
@@ -1467,24 +1467,24 @@ a.box:active {
         background-color: #f2f2f2; }
       .button.is-danger.is-inverted[disabled] {
         background-color: #fff;
-        border-color: transparent;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #ff3860; }
     .button.is-danger.is-loading:after {
       border-color: transparent transparent #fff #fff !important; }
     .button.is-danger.is-outlined {
       background-color: transparent;
-      border-color: #ff3860;
+      border-color: #e2dedd;
       color: #ff3860; }
       .button.is-danger.is-outlined:hover, .button.is-danger.is-outlined:focus {
         background-color: #ff3860;
-        border-color: #ff3860;
+        border-color: #e2dedd;
         color: #fff; }
       .button.is-danger.is-outlined.is-loading:after {
         border-color: transparent transparent #ff3860 #ff3860 !important; }
       .button.is-danger.is-outlined[disabled] {
         background-color: transparent;
-        border-color: #ff3860;
+        border-color: #e2dedd;
         box-shadow: none;
         color: #ff3860; }
     .button.is-danger.is-inverted.is-outlined {
@@ -6568,6 +6568,9 @@ a {
 .c-light {
   color: #a7a9ac !important; }
 
+.c-lighter {
+  color: #e2dedd !important; }
+
 .c-yellow {
   color: #f4bb2a !important; }
 
@@ -6589,6 +6592,9 @@ a {
 .bg-light {
   background-color: #a7a9ac !important; }
 
+.bg-lighter {
+  background-color: #e2dedd !important; }
+
 .bg-yellow {
   background-color: #f4bb2a !important; }
 
@@ -6609,6 +6615,9 @@ a {
 
 .bd-light {
   border: 1px solid #a7a9ac !important; }
+
+.bd-lighter {
+  border: 1px solid #e2dedd !important; }
 
 .bd-yellow {
   border: 1px solid #f4bb2a !important; }
@@ -6948,6 +6957,9 @@ a {
 body {
   height: 100vh; }
 
+header h2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
+
 .logo {
   width: 150px;
   height: 36px; }
@@ -7005,6 +7017,9 @@ body {
 .operation-area {
   height: 100vh; }
   .operation-area .button-save-view {
+    background: #333;
+    color: #e2dedd;
+    border: none;
     left: 2px;
     top: 2px;
     position: absolute;
@@ -7019,5 +7034,17 @@ body {
     right: 10px;
     bottom: 10px;
     z-index: 2; }
+
+.layout-box .thumb {
+  width: 80px;
+  height: 80px;
+  overflow: hidden; }
+  .layout-box .thumb img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px; }
+
+.collapse-box .content {
+  background: #595a5b; }
 
 /*# sourceMappingURL=screen.css.map */

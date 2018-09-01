@@ -140,19 +140,19 @@ $button-static-border-color: $grey-lighter !default;
 
     &.is-#{$name} {
       background-color: $color;
-      border-color: transparent;
+      border-color: $white-ter;
       color: $color-invert;
 
       &:hover,
       &.is-hovered {
         background-color: darken($color, 2.5%);
-        border-color: transparent;
+        border-color: $white-ter;
         color: $color-invert;
       }
 
       &:focus,
       &.is-focused {
-        border-color: transparent;
+        border-color: $white-ter;
         color: $color-invert;
 
         &:not(:active) {
@@ -163,13 +163,13 @@ $button-static-border-color: $grey-lighter !default;
       &:active,
       &.is-active {
         background-color: darken($color, 5%);
-        border-color: transparent;
+        border-color: $white-ter;
         color: $color-invert;
       }
 
       &[disabled] {
         background-color: $color;
-        border-color: transparent;
+        border-color: $white-ter;
         box-shadow: none;
       }
 
@@ -183,7 +183,7 @@ $button-static-border-color: $grey-lighter !default;
 
         &[disabled] {
           background-color: $color-invert;
-          border-color: transparent;
+          border-color: $white-ter;
           box-shadow: none;
           color: $color;
         }
@@ -197,13 +197,13 @@ $button-static-border-color: $grey-lighter !default;
 
       &.is-outlined {
         background-color: transparent;
-        border-color: $color;
+        border-color: $white-ter;
         color: $color;
 
         &:hover,
         &:focus {
           background-color: $color;
-          border-color: $color;
+          border-color: $white-ter;
           color: $color-invert;
         }
 
@@ -215,7 +215,7 @@ $button-static-border-color: $grey-lighter !default;
 
         &[disabled] {
           background-color: transparent;
-          border-color: $color;
+          border-color: $white-ter;
           box-shadow: none;
           color: $color;
         }

@@ -5,6 +5,7 @@
   <title>4D ATOM</title>
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/font/iconfont.css">
+  <link rel="stylesheet" href="assets/lib/miniToggle/minitoggle.css">
   <link rel="stylesheet" href="assets/css/screen.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
     <div class="column tr">
       <div class="p-t-5"></div>
       <span class="fz-12"><i class="iconfont icon-notice-circle"></i> HELP</span>
-      <a class="button is-rounded is-small is-outlined m-l-10">EXIT</a>
+      <a class="button is-rounded is-small is-outlined m-l-10" style="background: none;"><span class="c-lighter">EXIT</span></a>
       <a class="button is-primary is-rounded is-small m-l-10">PUBLISH</a>
       <a class="button is-primary is-rounded is-small is-outlined m-l-10">SAVE</a>
     </div>
@@ -29,7 +30,7 @@
   <div class="columns is-gapless">
     <div class="column pos-rel">
       <div class="operation-area">
-        <a class="button is-black is-small button-save-view"><i class="fa fa-camera m-r-5"></i>SAVE VIEW</a>
+        <a class="button is-small button-save-view"><i class="fa fa-camera m-r-5"></i>SAVE VIEW</a>
         <div class="notification is-warning notification-warning tc">
           <button class="delete"></button>
           Important: your email hasn't been confirmed yet. <br>
@@ -47,7 +48,7 @@
     </div>
     <div class="column is-narrow">
       <div style="width: 375px;">
-        <div class="tabs is-toggle is-fullwidth">
+        <div class="tabs is-toggle is-fullwidth m-b-0">
           <ul>
             <li class="is-active">
               <a>
@@ -76,11 +77,66 @@
             </li>
           </ul>
         </div>
+        <div class="tab-content">
+          <div class="collapse-box layout-box">
+            <div class="collapse-title">
+              <div class="columns m-0">
+                <div class="column cur_point">
+                  <i class="fa fa-angle-down"></i>
+                  VIEWS
+                </div>
+                <div class="column is-narrow tr">
+                  <div class="toggle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="content p-10 p-b-15 p-t-15">
+              <div class="box p-0 m-b-10">
+                <div class="columns m-0">
+                  <div class="column is-narrow">
+                    <div class="thumb"><img src="assets/images/gragh.png"></div>
+                  </div>
+                  <div class="column">
+                    <h4 class="m-0 fz-16 c-lighter">VIEW 1</h4>
+                    <p class="fz-14 c-lighter">Lorem ipsum dolor s</p>
+                    <div class="tr fz-14 c-lighter">
+                      <a href="#;" class="m-l-5"><i class="fa fa-camera"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-edit"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-trash"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box p-0">
+                <div class="columns m-0">
+                  <div class="column is-narrow">
+                    <div class="thumb"><img src="assets/images/gragh.png"></div>
+                  </div>
+                  <div class="column">
+                    <h4 class="m-0 fz-16 c-lighter">VIEW 1</h4>
+                    <p class="fz-14 c-lighter">Lorem ipsum dolor s</p>
+                    <div class="tr fz-14 c-lighter">
+                      <a href="#;" class="m-l-5"><i class="fa fa-camera"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-edit"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-trash"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="assets/lib/miniToggle/minitoggle.js"></script>
+<script>
+  $(() => {
+    $('.toggle').minitoggle()
+  })
+</script>
 </body>
 </html>
