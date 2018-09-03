@@ -7,7 +7,8 @@
 @import "sass/grid/_all";
 @import "sass/layout/_all";
 @import "sass/custom/all";
-@import "../../node_modules/bulma-extensions/dist/css/bulma-extensions.min.css";
+@import "../lib/bulma-extensions/index";
+
 body{
   height: 100vh;
 }
