@@ -12618,4 +12618,7 @@ header h2 {
 .collapse-box .content {
   background: #595a5b; }
 
+.bdb_dark {
+  border-bottom: 1px solid #595a5b; }
+
 /*# sourceMappingURL=screen.css.map */
