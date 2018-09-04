@@ -10312,7 +10312,7 @@ input[type=range].slider {
   input[type=range].slider::-webkit-slider-thumb {
     box-shadow: none;
     border: 1px solid #a7a9ac;
-    border-radius: 4px;
+    border-radius: 7px;
     background: white;
     cursor: pointer;
     -webkit-appearance: none;
@@ -10323,7 +10323,7 @@ input[type=range].slider {
     box-shadow: none;
     border: 1px solid #a7a9ac;
     background: white;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
@@ -10332,7 +10332,7 @@ input[type=range].slider {
     box-shadow: none;
     border: 1px solid #a7a9ac;
     background: white;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
     transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
