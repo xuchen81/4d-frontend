@@ -1,4 +1,7 @@
 $(() => {
+  $('#toggleViews').change(function() {
+    $('.layout-box .cover').toggle()
+  })
   $('#switchRoundedDefault').change(function() {
     const $allCheck = $('.filter-box').find('input[type=checkbox]')
     $allCheck.prop('checked', this.checked)
