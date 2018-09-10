@@ -157,6 +157,7 @@ $m-orange:                  #F18443;
         (c-lighter, $m-lighter),
         (c-yellow, $m-yellow),
         (c-orange, $m-orange),
+        (c-dark, $m-dark),
 {
   .#{$c-name} {
     color: $color !important;
@@ -171,6 +172,7 @@ $m-orange:                  #F18443;
         (bg-lighter, $m-lighter),
         (bg-yellow, $m-yellow),
         (bg-orange, $m-orange),
+        (bg-dark, $m-dark),
 {
   .#{$bg-name} {
     background-color: $color !important;
@@ -185,6 +187,7 @@ $m-orange:                  #F18443;
         (bd-lighter, $m-lighter),
         (bd-yellow, $m-yellow),
         (bd-orange, $m-orange),
+        (bd-dark, $m-dark),
 {
   .#{$bd-name} {
     border: 1px solid $color !important;

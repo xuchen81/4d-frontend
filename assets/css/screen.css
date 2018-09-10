@@ -6576,6 +6576,9 @@ a {
 .c-orange {
   color: #F18443 !important; }
 
+.c-dark {
+  color: #595a5b !important; }
+
 .bg-white {
   background-color: #ffffff !important; }
 
@@ -6600,6 +6603,9 @@ a {
 .bg-orange {
   background-color: #F18443 !important; }
 
+.bg-dark {
+  background-color: #595a5b !important; }
+
 .bd-white {
   border: 1px solid #ffffff !important; }
 
@@ -6623,6 +6629,9 @@ a {
 
 .bd-orange {
   border: 1px solid #F18443 !important; }
+
+.bd-dark {
+  border: 1px solid #595a5b !important; }
 
 .m-0 {
   margin: 0px !important; }
@@ -12630,5 +12639,19 @@ header h2 {
 
 .bdb_dark {
   border-bottom: 1px solid #595a5b; }
+
+.color-picker {
+  height: 30px;
+  line-height: 30px;
+  position: relative; }
+  .color-picker .colorPicker {
+    position: absolute;
+    left: -320px;
+    top: 0;
+    z-index: 999;
+    display: none; }
+  .color-picker .arrow {
+    width: 15px;
+    height: 30px; }
 
 /*# sourceMappingURL=screen.css.map */

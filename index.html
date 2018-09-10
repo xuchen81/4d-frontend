@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>4D ATOM</title>
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/lib/colorjoe/colorjoe.css">
   <link rel="stylesheet" href="assets/font/iconfont.css">
   <link rel="stylesheet" href="assets/css/screen.css">
 </head>
 <body>
 <header class="p-t-15 p-b-15">
+  <div id="rgbValue" class="dn"></div>
   <div class="columns is-mobile">
     <div class="column is-narrow">
       <h1 class="logo"><img src="assets/images/4dlogo.png" alt="" style="height: 36px;"></h1>
@@ -76,65 +78,105 @@
             </li>
           </ul>
         </div>
+        <div class="tab-content">1</div>
         <div class="tab-content">
-          <div class="collapse-box layout-box bdb_dark">
+          2
+        </div>
+        <div class="tab-content">
+          <div class="p-10 bg-dark">
+            <div class="bd-light p-5 bg-g3 fix fz-12 is-rounded box cur_point m-b-10">
+              <div class="l">23048900090234</div>
+              <div class="r"><i class="fa fa-caret-down"></i></div>
+            </div>
+            <h4 class="n m-b-10">uv000</h4>
+            <div>
+              <div class="m-b-5">
+                <input class="is-checkradio" id="exampleRadioInline1" type="radio" name="exampleRadioInline" checked="checked">
+                <label for="exampleRadioInline1" class="fz-12">Option 1</label>
+              </div>
+              <div>
+                <input class="is-checkradio" id="exampleRadioInline2" type="radio" name="exampleRadioInline">
+                <label for="exampleRadioInline2" class="fz-12">Option 2</label>
+              </div>
+            </div>
+          </div>
+          <div class="collapse-box  bdb_dark">
             <div class="collapse-title">
               <div class="columns m-0">
                 <div class="column cur_point">
                   <i class="fa fa-angle-down"></i>
-                  VIEWS
+                  DIFFUSE
                 </div>
                 <div class="column is-narrow tr">
                   <div class="field">
-                    <input id="toggleViews" type="checkbox" name="toggleViews" class="switch is-rounded" checked="checked">
-                    <label for="toggleViews"></label>
+                    <input id="toggleDiffuse" type="checkbox" name="toggleDiffuse" class="switch is-rounded" checked="checked">
+                    <label for="toggleDiffuse"></label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="content p-10 p-b-15 p-t-15">
-              <div class="box p-0 m-b-10">
-                <div class="cover"></div>
-                <div class="columns m-0">
-                  <div class="column is-narrow">
-                    <div class="thumb"><img src="assets/images/gragh.png"></div>
-                  </div>
-                  <div class="column">
-                    <h4 class="m-0 fz-16 c-lighter">VIEW 1</h4>
-                    <p class="fz-14 c-lighter">Lorem ipsum dolor s</p>
-                    <div class="tr fz-14 c-lighter">
-                      <a href="#;" class="m-l-5"><i class="fa fa-camera"></i></a>
-                      <a href="#;" class="m-l-5"><i class="fa fa-edit"></i></a>
-                      <a href="#;" class="m-l-5"><i class="fa fa-trash"></i></a>
-                    </div>
+              <div class="columns">
+                <div class="column is-narrow">
+                  <div class="color-picker fix cur_point" style="background: orange;">
+                    <div class="arrow fz-12 tc bg-g3"><i class="fa fa-caret-down"></i></div>
                   </div>
                 </div>
-              </div>
-              <div class="box p-0">
-                <div class="cover"></div>
-                <div class="columns m-0">
-                  <div class="column is-narrow">
-                    <div class="thumb"><img src="assets/images/gragh.png"></div>
-                  </div>
-                  <div class="column">
-                    <h4 class="m-0 fz-16 c-lighter">VIEW 1</h4>
-                    <p class="fz-14 c-lighter">Lorem ipsum dolor s</p>
-                    <div class="tr fz-14 c-lighter">
-                      <a href="#;" class="m-l-5"><i class="fa fa-camera"></i></a>
-                      <a href="#;" class="m-l-5"><i class="fa fa-edit"></i></a>
-                      <a href="#;" class="m-l-5"><i class="fa fa-trash"></i></a>
-                    </div>
+                <div class="column">
+                  <div>
+                    <input id="sliderWithValue3" class="slider has-output is-fullwidth m-0" min="0" max="100" value="50" step="1" type="range">
+                    <output for="sliderWithValue3">50</output>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="tab-content">
-          2
-        </div>
-        <div class="tab-content">
-          3
+          <div class="collapse-box  bdb_dark">
+            <div class="collapse-title">
+              <div class="columns m-0">
+                <div class="column cur_point">
+                  <i class="fa fa-angle-down"></i>
+                  SPECULAR
+                </div>
+                <div class="column is-narrow tr">
+                  <div class="field">
+                    <input id="toggleSpecular" type="checkbox" name="toggleSpecular" class="switch is-rounded" checked="checked">
+                    <label for="toggleSpecular"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content p-10 p-b-15 p-t-15">
+              <div class="field has-addons tc">
+                <p class="control">
+                  <a class="button is-outlined c-white" style="background: none;">
+                    <span>Left</span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary">
+                    <span>Center</span>
+                  </a>
+                </p>
+              </div>
+              <div class="columns">
+                <div class="column is-narrow">
+                  <div class="color-picker fix cur_point">
+                    <div id="rgbPicker"></div>
+                    <div class="toggle-picker" style="background: red;">
+                      <div class="arrow fz-12 tc bg-g3"><i class="fa fa-caret-down"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div>
+                    <input id="sliderWithValue6" class="slider has-output is-fullwidth m-0" min="0" max="100" value="50" step="1" type="range">
+                    <output for="sliderWithValue6">50</output>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="tab-content">
           <div class="collapse-box filter-box bdb_dark">
@@ -233,7 +275,58 @@
           </div>
         </div>
         <div class="tab-content">
-          5
+          <div class="collapse-box layout-box bdb_dark">
+            <div class="collapse-title">
+              <div class="columns m-0">
+                <div class="column cur_point">
+                  <i class="fa fa-angle-down"></i>
+                  VIEWS
+                </div>
+                <div class="column is-narrow tr">
+                  <div class="field">
+                    <input id="toggleViews" type="checkbox" name="toggleViews" class="switch is-rounded" checked="checked">
+                    <label for="toggleViews"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content p-10 p-b-15 p-t-15">
+              <div class="box p-0 m-b-10">
+                <div class="cover"></div>
+                <div class="columns m-0">
+                  <div class="column is-narrow">
+                    <div class="thumb"><img src="assets/images/gragh.png"></div>
+                  </div>
+                  <div class="column">
+                    <h4 class="m-0 fz-16 c-lighter">VIEW 1</h4>
+                    <p class="fz-14 c-lighter">Lorem ipsum dolor s</p>
+                    <div class="tr fz-14 c-lighter">
+                      <a href="#;" class="m-l-5"><i class="fa fa-camera"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-edit"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-trash"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box p-0">
+                <div class="cover"></div>
+                <div class="columns m-0">
+                  <div class="column is-narrow">
+                    <div class="thumb"><img src="assets/images/gragh.png"></div>
+                  </div>
+                  <div class="column">
+                    <h4 class="m-0 fz-16 c-lighter">VIEW 1</h4>
+                    <p class="fz-14 c-lighter">Lorem ipsum dolor s</p>
+                    <div class="tr fz-14 c-lighter">
+                      <a href="#;" class="m-l-5"><i class="fa fa-camera"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-edit"></i></a>
+                      <a href="#;" class="m-l-5"><i class="fa fa-trash"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -242,6 +335,7 @@
 
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="assets/lib/bulma-extensions/dist/js/bulma-extensions.min.js"></script>
+<script src="assets/lib/colorjoe/colorjoe.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
