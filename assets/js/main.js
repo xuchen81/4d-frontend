@@ -3,14 +3,21 @@ $(() => {
   colorjoe.rgb('rgbPicker').on('change', function(c) {
     val.innerHTML = c.css();
   }).update();
+  $('.dropdown').click(function() {
+    $(this).toggleClass('is-active')
+  })
   $('#toggleViews').change(function() {
     $('.layout-box .cover').toggle()
+  })
+  const $specularTabs = $('.specular-tabs li')
+  $specularTabs.click(function () {
+    $specularTabs.toggleClass('is-active')
   })
   $('#switchRoundedDefault').change(function() {
     const $allCheck = $('.filter-box').find('input[type=checkbox]')
     $allCheck.prop('checked', this.checked)
   })
-  const $tabTitle = $('.tabs li')
+  const $tabTitle = $('.main-tabs li')
   const $tabContent = $('.tab-content')
   $tabContent.hide(0).eq(2).show(0)
   $tabTitle.click(function () {
@@ -26,5 +33,6 @@ $(() => {
   })
   $('.toggle-picker').click(function () {
     $(this).parent().find('.colorPicker').toggle()
+    $(this).parent().find('.texture-area').toggle()
   })
 })

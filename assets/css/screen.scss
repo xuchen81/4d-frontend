@@ -137,11 +137,18 @@ header{
 .bdb_dark{
   border-bottom: 1px solid $m-dark;
 }
+.color-box{
+  width: 30px;
+  height: 30px;
+}
 .color-picker{
   height: 30px;
   line-height: 30px;
   position: relative;
-  .colorPicker{
+  .texture-area{
+    width: 310px;
+  }
+  .colorPicker, .texture-area{
     position: absolute;
     left: -320px;
     top: 0;
@@ -151,5 +158,32 @@ header{
   .arrow{
     width: 15px;
     height: 30px;
+  }
+}
+.tabs{
+  ul{
+    margin: 0 !important;
+  }
+  li{
+    margin-top: 0 !important;
+  }
+}
+.main-tabs{
+  a{
+    border-radius: 0 !important;
+  }
+}
+.operation-area{
+  .badge{
+    position: absolute;
+    z-index: 999;
+  }
+  .tag-area{
+    position: absolute;
+    z-index: 999;
+    background: black(.4) !important;
+    input, textarea{
+      background: black(.3) !important;
+    }
   }
 }

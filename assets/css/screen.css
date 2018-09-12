@@ -4898,7 +4898,7 @@ label.panel-block {
     margin-bottom: 1.5rem; }
   .tabs a {
     align-items: center;
-    border-bottom-color: #595a5b;
+    border-bottom-color: #a7a9ac;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     color: #e2dedd;
@@ -4917,7 +4917,7 @@ label.panel-block {
       color: #e2dedd; }
   .tabs ul {
     align-items: center;
-    border-bottom-color: #595a5b;
+    border-bottom-color: #a7a9ac;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     display: flex;
@@ -4944,19 +4944,19 @@ label.panel-block {
     justify-content: flex-end; }
   .tabs.is-boxed a {
     border: 1px solid transparent;
-    border-radius: 0 0 0 0; }
+    border-radius: 4px 4px 0 0; }
     .tabs.is-boxed a:hover {
       background-color: #4a4a4a;
-      border-bottom-color: #595a5b; }
+      border-bottom-color: #a7a9ac; }
   .tabs.is-boxed li.is-active a {
     background-color: white;
-    border-color: #595a5b;
+    border-color: #a7a9ac;
     border-bottom-color: transparent !important; }
   .tabs.is-fullwidth li {
     flex-grow: 1;
     flex-shrink: 0; }
   .tabs.is-toggle a {
-    border-color: #595a5b;
+    border-color: #a7a9ac;
     border-style: solid;
     border-width: 1px;
     margin-bottom: 0;
@@ -4968,9 +4968,9 @@ label.panel-block {
   .tabs.is-toggle li + li {
     margin-left: -1px; }
   .tabs.is-toggle li:first-child a {
-    border-radius: 0 0 0 0; }
+    border-radius: 4px 0 0 4px; }
   .tabs.is-toggle li:last-child a {
-    border-radius: 0 0 0 0; }
+    border-radius: 0 4px 4px 0; }
   .tabs.is-toggle li.is-active a {
     background-color: #f4bb2a;
     border-color: #f4bb2a;
@@ -12640,11 +12640,17 @@ header h2 {
 .bdb_dark {
   border-bottom: 1px solid #595a5b; }
 
+.color-box {
+  width: 30px;
+  height: 30px; }
+
 .color-picker {
   height: 30px;
   line-height: 30px;
   position: relative; }
-  .color-picker .colorPicker {
+  .color-picker .texture-area {
+    width: 310px; }
+  .color-picker .colorPicker, .color-picker .texture-area {
     position: absolute;
     left: -320px;
     top: 0;
@@ -12653,5 +12659,23 @@ header h2 {
   .color-picker .arrow {
     width: 15px;
     height: 30px; }
+
+.tabs ul {
+  margin: 0 !important; }
+.tabs li {
+  margin-top: 0 !important; }
+
+.main-tabs a {
+  border-radius: 0 !important; }
+
+.operation-area .badge {
+  position: absolute;
+  z-index: 999; }
+.operation-area .tag-area {
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4) !important; }
+  .operation-area .tag-area input, .operation-area .tag-area textarea {
+    background: rgba(0, 0, 0, 0.3) !important; }
 
 /*# sourceMappingURL=screen.css.map */

@@ -31,6 +31,18 @@
   <div class="columns is-gapless">
     <div class="column pos-rel">
       <div class="operation-area">
+        <div class="box tag-area" style="left: 420px;top: 420px;">
+          <input class="input" type="text" placeholder="Text input">
+          <div class="m-b-10"></div>
+          <textarea class="textarea" placeholder="10 lines of textarea" rows="5"></textarea>
+          <div class="m-b-10"></div>
+          <div class="tr">
+            <a class="button is-rounded is-small is-outlined m-l-10" style="background: none;"><span class="c-lighter">CANCEL</span></a>
+            <a class="button is-primary is-rounded is-small m-l-10">OK</a>
+          </div>
+        </div>
+        <span class="badge is-badge-outlined" data-badge="1" style="left: 200px;top: 200px;"></span>
+        <span class="badge is-badge-outlined" data-badge="8" style="left: 400px;top: 400px;"></span>
         <a class="button is-small button-save-view"><i class="fa fa-camera m-r-5"></i>SAVE VIEW</a>
         <div class="notification is-warning notification-warning tc">
           <button class="delete"></button>
@@ -49,7 +61,7 @@
     </div>
     <div class="column is-narrow">
       <div style="width: 375px;">
-        <div class="tabs is-toggle is-fullwidth m-b-0">
+        <div class="tabs is-toggle is-fullwidth m-b-0 main-tabs">
           <ul>
             <li class="is-active">
               <a>
@@ -84,9 +96,35 @@
         </div>
         <div class="tab-content">
           <div class="p-10 bg-dark">
-            <div class="bd-light p-5 bg-g3 fix fz-12 is-rounded box cur_point m-b-10">
-              <div class="l">23048900090234</div>
-              <div class="r"><i class="fa fa-caret-down"></i></div>
+            <div class="dropdown w-100 m-b-15">
+              <div class="dropdown-trigger w-100">
+                <button class="button c-white w-100 is-small bd-light bg-g3" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>choose</span>
+                  <span class="icon is-small">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                </button>
+              </div>
+              <div class="dropdown-menu w-100" role="menu">
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-item">
+                    Dropdown item
+                  </a>
+                  <a class="dropdown-item">
+                    Other dropdown item
+                  </a>
+                  <a href="#" class="dropdown-item is-active">
+                    Active dropdown item
+                  </a>
+                  <a href="#" class="dropdown-item">
+                    Other dropdown item
+                  </a>
+                  <hr class="dropdown-divider">
+                  <a href="#" class="dropdown-item">
+                    With a divider
+                  </a>
+                </div>
+              </div>
             </div>
             <h4 class="n m-b-10">uv000</h4>
             <div>
@@ -147,22 +185,87 @@
               </div>
             </div>
             <div class="content p-10 p-b-15 p-t-15">
-              <div class="field has-addons tc">
-                <p class="control">
-                  <a class="button is-outlined c-white" style="background: none;">
-                    <span>Left</span>
-                  </a>
-                </p>
-                <p class="control">
-                  <a class="button is-primary">
-                    <span>Center</span>
-                  </a>
-                </p>
+              <div class="m-b-15">
+                <div class="tabs is-toggle is-fullwidth is-small specular-tabs">
+                  <ul>
+                    <li class="is-active">
+                      <a>
+                        <span>color</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>texture</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="columns">
                 <div class="column is-narrow">
                   <div class="color-picker fix cur_point">
                     <div id="rgbPicker"></div>
+                    <div class="toggle-picker" style="background: green;">
+                      <div class="arrow fz-12 tc bg-g3"><i class="fa fa-caret-down"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div>
+                    <input id="sliderWithValue7" class="slider has-output is-fullwidth m-0" min="0" max="100" value="50" step="1" type="range">
+                    <output for="sliderWithValue7">50</output>
+                  </div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column is-narrow">
+                  <div class="color-picker fix cur_point">
+                    <div class="texture-area box">
+                      <button class="button is-primary w-100 is-small m-b-15">manage</button>
+                      <div class="dropdown w-100">
+                        <div class="dropdown-trigger w-100">
+                          <button class="button c-white w-100 is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span>choose</span>
+                            <span class="icon is-small">
+                              <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                          </button>
+                        </div>
+                        <div class="dropdown-menu w-100" id="dropdown-menu" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <div class="p-b-10"></div>
+                              <div class="columns is-mobile">
+                                <div class="column is-narrow p-b-0 p-t-0">
+                                  <div class="color-box" style="background-color: #ccc;"></div>
+                                </div>
+                                <div class="column p-b-0 p-t-0">none</div>
+                              </div>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <div class="dropdown-item">
+                              <div class="p-b-10"></div>
+                              <div class="columns is-mobile">
+                                <div class="column is-narrow p-b-0 p-t-0">
+                                  <div class="color-box" style="background-color: #ccc;"></div>
+                                </div>
+                                <div class="column p-b-0 p-t-0">none</div>
+                              </div>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <div class="dropdown-item">
+                              <div class="p-b-10"></div>
+                              <div class="columns is-mobile">
+                                <div class="column is-narrow p-b-0 p-t-0">
+                                  <div class="color-box" style="background-color: #ccc;"></div>
+                                </div>
+                                <div class="column p-b-0 p-t-0">none</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="toggle-picker" style="background: red;">
                       <div class="arrow fz-12 tc bg-g3"><i class="fa fa-caret-down"></i></div>
                     </div>
