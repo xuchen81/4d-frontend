@@ -6,6 +6,10 @@ $(() => {
   $('.dropdown').click(function() {
     $(this).toggleClass('is-active')
   })
+  $('.slider').on('input', function () {
+    const $this = $(this)
+    $this.parent().find('output').text($this.val())
+  })
   $('#toggleViews').change(function() {
     $('.layout-box .cover').toggle()
   })
