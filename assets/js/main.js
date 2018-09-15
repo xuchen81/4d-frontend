@@ -1,8 +1,6 @@
 $(() => {
-  const val = document.getElementById('rgbValue')
   const $rgbResult = $('.rgb-result')
   colorjoe.rgb('rgbPicker').on('change', function(c) {
-    val.innerHTML = c.css();
     $rgbResult.css('background', c.css())
   }).update();
   $('.dropdown').click(function() {
@@ -12,15 +10,16 @@ $(() => {
     const $this = $(this)
     $this.parent().find('output').text($this.val())
   })
+  const layoutBoxCover = $('.layout-box .cover')
   $('#toggleViews').change(function() {
-    $('.layout-box .cover').toggle()
+    layoutBoxCover.toggle()
   })
   const $specularTabs = $('.specular-tabs li')
   $specularTabs.click(function () {
     $specularTabs.toggleClass('is-active')
   })
+  const $allCheck = $('.filter-box').find('input[type=checkbox]')
   $('#switchRoundedDefault').change(function() {
-    const $allCheck = $('.filter-box').find('input[type=checkbox]')
     $allCheck.prop('checked', this.checked)
   })
   const $tabTitle = $('.main-tabs li')
