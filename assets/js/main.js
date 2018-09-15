@@ -1,7 +1,9 @@
 $(() => {
   const val = document.getElementById('rgbValue')
+  const $rgbResult = $('.rgb-result')
   colorjoe.rgb('rgbPicker').on('change', function(c) {
     val.innerHTML = c.css();
+    $rgbResult.css('background', c.css())
   }).update();
   $('.dropdown').click(function() {
     $(this).toggleClass('is-active')
