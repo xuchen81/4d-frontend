@@ -37,7 +37,8 @@ $(() => {
     $(this).parent().find('.content').eq(0).toggle()
   })
   $('.toggle-picker').click(function () {
-    $(this).parent().find('.colorPicker').toggle()
-    $(this).parent().find('.texture-area').toggle()
+    const $this = $(this)
+    $this.parent().find('.colorPicker').toggle()
+    $this.parent().find('.texture-area').toggle()
   })
 })
