@@ -1,8 +1,20 @@
 $(() => {
+  const defaultPanel = 1
   const $rgbResult = $('.rgb-result')
+  const $rgbValue = $('#rgbValue')
+  const $lightContent = $('.light-content')
   colorjoe.rgb('rgbPicker').on('change', function(c) {
     $rgbResult.css('background', c.css())
-  }).update();
+    $rgbValue.text(c.css())
+  }).update()
+  $lightContent.find('.fa-circle').click(function () {
+    const $this = $(this)
+    $this.toggleClass('c-yellow')
+  })
+  $lightContent.find('.fa-eye').click(function () {
+    const $this = $(this)
+    $this.toggleClass('c-g9')
+  })
   $('.dropdown').click(function() {
     $(this).toggleClass('is-active')
   })
@@ -24,7 +36,8 @@ $(() => {
   })
   const $tabTitle = $('.main-tabs li')
   const $tabContent = $('.tab-content')
-  $tabContent.hide(0).eq(2).show(0)
+  $tabContent.hide(0).eq(defaultPanel).show(0)
+  $tabTitle.eq(defaultPanel).addClass('is-active')
   $tabTitle.click(function () {
     $tabTitle.removeClass('is-active')
     const $this = $(this)

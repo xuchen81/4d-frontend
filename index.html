@@ -10,7 +10,6 @@
 </head>
 <body>
 <header class="p-t-15 p-b-15">
-  <div id="rgbValue" class="dn"></div>
   <div class="columns is-mobile">
     <div class="column is-narrow">
       <h1 class="logo"><img src="assets/images/4dlogo.png" alt="" style="height: 36px;"></h1>
@@ -63,7 +62,7 @@
       <div style="width: 375px;">
         <div class="tabs is-toggle is-fullwidth m-b-0 main-tabs">
           <ul>
-            <li class="is-active">
+            <li>
               <a>
                 <span class="icon is-small"><i class="iconfont icon-gear" aria-hidden="true"></i></span>
               </a>
@@ -92,7 +91,96 @@
         </div>
         <div class="tab-content">1</div>
         <div class="tab-content">
-          2
+          <div class="collapse-box  bdb_dark">
+            <div class="collapse-title">
+              <div class="columns m-0">
+                <div class="column cur_point">
+                  <i class="fa fa-angle-down"></i>
+                  LIGHTS
+                </div>
+                <div class="column is-narrow tr">
+                  <div class="field">
+                    <input id="toggleLights" type="checkbox" name="toggleLights" class="switch is-rounded" checked="checked">
+                    <label for="toggleLights"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content p-10 p-b-15 p-t-15 light-content">
+              <div class="m-b-15 bd-light p-20">
+                <div class="columns p-l-10 p-r-10">
+                  <div class="column p-0">
+                    <i class="fa fa-circle cur_point"></i>
+                    <label>Check me</label>
+                  </div>
+                  <div class="column is-narrow tr p-0">
+                    <i class="fa fa-eye cur_point"></i>
+                  </div>
+                </div>
+                <div class="columns p-l-10 p-r-10">
+                  <div class="column p-0">
+                    <i class="fa fa-circle cur_point"></i>
+                    <label>Check me</label>
+                  </div>
+                  <div class="column is-narrow tr p-0">
+                    <i class="fa fa-eye cur_point"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="bdb_light m-b-15"></div>
+              <div class="m-b-15">
+                <div class="tabs is-toggle is-fullwidth is-small specular-tabs">
+                  <ul>
+                    <li class="is-active">
+                      <a>
+                        <span>none</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>print</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>spot</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <div id="rgbValue"></div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column is-narrow">
+                  <div class="color-picker fix cur_point">
+                    <div id="rgbPicker"></div>
+                    <div class="toggle-picker rgb-result" style="background: green;">
+                      <div class="arrow fz-12 tc bg-g3"><i class="fa fa-caret-down"></i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div>
+                    <input id="sliderWithValue7" class="slider has-output is-fullwidth m-0" min="0" max="100" value="50" step="1" type="range">
+                    <output for="sliderWithValue7">50</output>
+                  </div>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <div>
+                    <input id="sliderWithValue6" class="slider has-output is-fullwidth m-0" min="0" max="100" value="50" step="1" type="range">
+                    <output for="sliderWithValue6">50</output>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="tab-content">
           <div class="p-10 bg-dark">
@@ -199,6 +287,11 @@
                       </a>
                     </li>
                   </ul>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <div id="rgbValue"></div>
                 </div>
               </div>
               <div class="columns">
