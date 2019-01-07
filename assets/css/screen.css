@@ -12944,4 +12944,10 @@ header h2 {
   .operation-area .tag-area input, .operation-area .tag-area textarea {
     background: rgba(0, 0, 0, 0.3) !important; }
 
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
 /*# sourceMappingURL=screen.css.map */
