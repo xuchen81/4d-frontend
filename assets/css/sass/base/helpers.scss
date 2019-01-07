@@ -1,3 +1,4 @@
+@import "../utilities/_all";
 // Float
 
 .is-clearfix {
@@ -156,6 +157,10 @@ $alignments: ("centered": "center", "justified": "justify", "left": "left", "rig
 
 @each $name, $pair in $colors {
   $color: nth($pair, 1);
+
+  .has-background-#{$name} {
+    background-color: $color !important;
+  }
 
   .has-text-#{$name} {
     color: $color !important;

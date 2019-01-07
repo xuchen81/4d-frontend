@@ -87,8 +87,8 @@ header{
 .operation-area{
   height: 100vh;
   .button-save-view{
-    background: $m-3;
-    color: $m-lighter;
+    background: $black;
+    color: $grey-light;
     border: none;
     left: 2px;
     top: 2px;
@@ -134,11 +134,11 @@ header{
 }
 .collapse-box{
   .content{
-    background: $m-dark;
+    background: $grey-dark;
   }
 }
 .bdb_dark{
-  border-bottom: 1px solid $m-dark;
+  border-bottom: 1px solid $grey-dark;
 }
 .color-box{
   width: 30px;

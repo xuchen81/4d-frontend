@@ -1,4 +1,4 @@
-$tabs-border-bottom-color: $grey-light !default;
+$tabs-border-bottom-color: $border !default;
 $tabs-border-bottom-style: solid !default;
 $tabs-border-bottom-width: 1px !default;
 $tabs-link-color: $text !default;
@@ -10,21 +10,21 @@ $tabs-link-padding: 0.5em 1em !default;
 
 $tabs-boxed-link-radius: $radius !default;
 $tabs-boxed-link-hover-background-color: $background !default;
-$tabs-boxed-link-hover-border-bottom-color: $grey-light !default;
+$tabs-boxed-link-hover-border-bottom-color: $border !default;
 
 $tabs-boxed-link-active-background-color: $white !default;
-$tabs-boxed-link-active-border-color: $grey-light !default;
+$tabs-boxed-link-active-border-color: $border !default;
 $tabs-boxed-link-active-border-bottom-color: transparent !default;
 
-$tabs-toggle-link-border-color: $grey-light !default;
+$tabs-toggle-link-border-color: $border !default;
 $tabs-toggle-link-border-style: solid !default;
 $tabs-toggle-link-border-width: 1px !default;
 $tabs-toggle-link-hover-background-color: $background !default;
 $tabs-toggle-link-hover-border-color: $border-hover !default;
 $tabs-toggle-link-radius: $radius !default;
-$tabs-toggle-link-active-background-color: $m-yellow !default;
-$tabs-toggle-link-active-border-color: $m-yellow !default;
-$tabs-toggle-link-active-color: $m-yellow-invert !default;
+$tabs-toggle-link-active-background-color: $link !default;
+$tabs-toggle-link-active-border-color: $link !default;
+$tabs-toggle-link-active-color: $link-invert !default;
 
 .tabs {
   @include block;

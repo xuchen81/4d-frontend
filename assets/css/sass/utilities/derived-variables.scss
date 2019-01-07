@@ -1,8 +1,8 @@
-$primary: $m-yellow !default;
+$primary: $orange !default;
 
 $info: $cyan !default;
 $success: $green !default;
-$warning: $m-orange !default;
+$warning: $yellow !default;
 $danger: $red !default;
 
 $light: $white-ter !default;
@@ -10,38 +10,36 @@ $dark: $grey-darker !default;
 
 // Invert colors
 
-$orange-invert: findColorInvert($m-orange) !default;
-$yellow-invert: findColorInvert($m-yellow) !default;
+$orange-invert: findColorInvert($orange) !default;
+$yellow-invert: findColorInvert($yellow) !default;
 $green-invert: findColorInvert($green) !default;
 $turquoise-invert: findColorInvert($turquoise) !default;
 $cyan-invert: findColorInvert($cyan) !default;
 $blue-invert: findColorInvert($blue) !default;
 $purple-invert: findColorInvert($purple) !default;
 $red-invert: findColorInvert($red) !default;
-$m-yellow-invert: findColorInvert($m-yellow) !default;
-$m-orange-invert: findColorInvert($m-orange) !default;
 
-$primary-invert: $m-yellow-invert !default;
+$primary-invert: $turquoise-invert !default;
 $info-invert: $cyan-invert !default;
 $success-invert: $green-invert !default;
-$warning-invert: $m-orange-invert !default;
+$warning-invert: $yellow-invert !default;
 $danger-invert: $red-invert !default;
 $light-invert: $dark !default;
 $dark-invert: $light !default;
 
 // General colors
 
-$background: $grey-dark !default;
+$background: $white-ter !default;
 
-$border: $m-dark !default;
+$border: $grey-lighter !default;
 $border-hover: $grey-light !default;
 
 // Text colors
 
-$text: $white-ter !default;
+$text: $grey-dark !default;
 $text-invert: findColorInvert($text) !default;
-$text-light: $grey-lighter !default;
-$text-strong: $grey-light !default;
+$text-light: $grey !default;
+$text-strong: $grey-darker !default;
 
 // Code colors
 
@@ -53,7 +51,7 @@ $pre-background: $background !default;
 
 // Link colors
 
-$link: $white-ter !default;
+$link: $orange !default;
 $link-invert: $blue-invert !default;
 $link-visited: $purple !default;
 
@@ -61,7 +59,7 @@ $link-hover: $grey-darker !default;
 $link-hover-border: $grey-light !default;
 
 $link-focus: $grey-darker !default;
-$link-focus-border: $blue !default;
+$link-focus-border: $orange !default;
 
 $link-active: $grey-darker !default;
 $link-active-border: $grey-dark !default;

@@ -13,13 +13,8 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
-body{
-  position: relative;
-}
 a{
-  transition: all .5s;
   &:hover,&:focus,&:active{
-    opacity: .75;
     text-decoration: none;
   }
 }
@@ -29,12 +24,49 @@ a{
 .max-100 {
   max-width: 100%;
 }
-.no-rounded { border-radius: 0 !important;}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+.fixed-full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
 .b-0 { border: 0 !important; }
-.ell{
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.ell, .text-overflow{
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: nowrap;
+}
+.rounded-circle {
+  border-radius: 50% !important;
 }
 .hr {
   display: block;
@@ -50,15 +82,6 @@ a{
   height: 3px;
   border-top: 1px solid #E3E3E3;
   border-bottom: 1px solid #E3E3E3;
-}
-
-.position-relative,
-.pos-rel {
-  position: relative;
-}
-.position-absolute,
-.pos-abs {
-  position: absolute;
 }
 
 .fix {
@@ -101,6 +124,14 @@ a{
   display: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .db {
   display: block;
 }
@@ -138,59 +169,75 @@ a{
   text-indent: 2em;
 }
 
-$m-white:                  #ffffff;
-$m-3:                  #333;
-$m-6:                  #666;
-$m-9:                  #A7A9AC;
-$m-lighter:                  #e2dedd;
-$m-light:                  #a7a9ac;
-$m-dark:                  #595a5b;
-$m-yellow:                  #f4bb2a;
-$m-orange:                  #F18443;
 
-@each $c-name, $color in
-        (c-white, $m-white),
-        (c-g3, $m-3),
-        (c-g6, $m-6),
-        (c-g9, $m-9),
-        (c-light, $m-light),
-        (c-lighter, $m-lighter),
-        (c-yellow, $m-yellow),
-        (c-orange, $m-orange),
-        (c-dark, $m-dark),
-{
-  .#{$c-name} {
+$grey-333:                  #333;
+$grey-666:                  #666;
+$grey-999:                  #999;
+$grey-ccc:                  #ccc;
+$grey-ddd:                  #ddd;
+$grey-eee:                  #eee;
+$grey-f5:                 #f5f5f5;
+$white:                  #ffffff;
+$yellow:            #ffde03;
+$pink:            #FFDBCF;
+$purple:          #852EF6;
+$brown:          #442B2D;
+
+@each $color-name, $color in
+                (grey-333, $grey-333),
+                (grey-999, $grey-999),
+                (grey-ccc, $grey-ccc),
+                (grey-ddd, $grey-ddd),
+                (grey-eee, $grey-eee),
+                (grey-f5, $grey-f5),
+                (white, $white),
+                (yellow, $yellow),
+                (pink, $pink),
+                (purple, $purple),
+                (brown, $brown), {
+  .text-color-#{$color-name} {
     color: $color !important;
   }
-}
-@each $bg-name, $color in
-        (bg-white, $m-white),
-        (bg-g3, $m-3),
-        (bg-g6, $m-6),
-        (bg-g9, $m-9),
-        (bg-light, $m-light),
-        (bg-lighter, $m-lighter),
-        (bg-yellow, $m-yellow),
-        (bg-orange, $m-orange),
-        (bg-dark, $m-dark),
-{
-  .#{$bg-name} {
+  .bg-color-#{$color-name} {
     background-color: $color !important;
   }
-}
-@each $bd-name, $color in
-        (bd-white, $m-white),
-        (bd-g3, $m-3),
-        (bd-g6, $m-6),
-        (bd-g9, $m-9),
-        (bd-light, $m-light),
-        (bd-lighter, $m-lighter),
-        (bd-yellow, $m-yellow),
-        (bd-orange, $m-orange),
-        (bd-dark, $m-dark),
-{
-  .#{$bd-name} {
+  .border-color-#{$color-name} {
     border: 1px solid $color !important;
+  }
+  .border-color-#{$color-name}-left {
+    border-left: 1px solid $color !important;
+  }
+  .border-color-#{$color-name}-right {
+    border-right: 1px solid $color !important;
+  }
+  .border-color-#{$color-name}-top {
+    border-top: 1px solid $color !important;
+  }
+  .border-color-#{$color-name}-bottom {
+    border-bottom: 1px solid $color !important;
+  }
+}
+
+@each $align-type in
+        baseline,
+        top,
+        middle,
+        bottom,
+        text-bottom,
+        text-top {
+  .align-#{$align-type} {
+    vertical-align: #{$align-type} !important;
+  }
+}
+
+@each $pos-type in
+        static,
+        relative,
+        absolute,
+        fixed,
+        sticky {
+  .position-#{$pos-type} {
+    position: #{$pos-type} !important;
   }
 }
 
@@ -226,22 +273,26 @@ $sp-size:0;
   .p-r-#{$sp-size}{
     padding-right: 1px * $sp-size !important;
   }
-  $sp-size: $sp-size +5;
+  $sp-size: $sp-size + 5;
 }
 
-$fz-size:12;
-@while $fz-size <=34{
-  .fz-#{$fz-size}{
-    font-size: 1px * $fz-size !important;
+$px-size:12;
+@while $px-size <=34{
+  .fz-#{$px-size}{
+    font-size: 1px * $px-size !important;
   }
-  $fz-size: $fz-size +2;
+  .height-#{$px-size}{
+    height: 1px * $px-size !important;
+    line-height: 1px * $px-size !important;
+  }
+  $px-size: $px-size + 2;
 }
 
-$hi-size:18;
-@while $hi-size <=38{
-  .h#{$hi-size}{
-    height: 1px * $hi-size !important;
-    line-height: 1px * $hi-size !important;
+$radius-size:0;
+@while $radius-size <=10{
+  .rounded-#{$radius-size}{
+    border-radius: 1px * $radius-size !important;
   }
-  $hi-size: $hi-size +2;
+  $radius-size: $radius-size + 2;
 }
+
