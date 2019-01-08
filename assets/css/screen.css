@@ -12807,7 +12807,7 @@ header h2 {
   width: 150px;
   height: 36px; }
 
-.cur_point {
+.cur_pointer {
   cursor: pointer; }
 
 .bdb_light {
@@ -12949,5 +12949,19 @@ header h2 {
   bottom: 0;
   left: 0;
   width: 100%; }
+
+.model-dropdown-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 999; }
+
+.search-input .input.is-small, .search-input .textarea.is-small {
+  border-radius: 290486px !important; }
+
+.working-station-area img {
+  transition: all .3s; }
+  .working-station-area img:hover {
+    opacity: .75; }
 
 /*# sourceMappingURL=screen.css.map */

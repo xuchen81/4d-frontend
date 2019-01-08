@@ -21,7 +21,7 @@ header{
   width: 150px;
   height: 36px;
 }
-.cur_point{
+.cur_pointer{
   cursor: pointer;
 }
 .bdb_light {
@@ -195,4 +195,23 @@ header{
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.model-dropdown-button{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 999;
+}
+.search-input{
+  .input.is-small, .textarea.is-small{
+    border-radius: 290486px !important;
+  }
+}
+.working-station-area{
+  img{
+    transition: all .3s;
+    &:hover{
+      opacity: .75;
+    }
+  }
 }

@@ -2,8 +2,9 @@
 
 ## start dev
 ```
-yarn
+$ yarn
+$ yarn dev
 ```
 
 ## deploy
-upload the all to your Nginx/Apache/IIS
+upload dist/* to your Nginx/Apache/IIS dir
