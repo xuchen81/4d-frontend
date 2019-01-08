@@ -5,6 +5,7 @@
 $ yarn
 $ yarn dev
 ```
+chrome open [http://localhost:3000](http://localhost:3000)
 
 ## deploy
 upload dist/* to your Nginx/Apache/IIS dir
