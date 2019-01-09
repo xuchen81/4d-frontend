@@ -12954,7 +12954,7 @@ header h2 {
   position: absolute;
   right: 5px;
   top: 5px;
-  z-index: 999; }
+  z-index: 1; }
 
 .search-input .input.is-small, .search-input .textarea.is-small {
   border-radius: 290486px !important; }
