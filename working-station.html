@@ -7,12 +7,136 @@
   <link rel="stylesheet" href="assets/css/screen.css">
 </head>
 <body class="bg-white">
-<div class="modal is-active modal-upload">
+<div class="modal modal-properties is-active">
+  <div class="modal-background"></div>
+  <div class="modal-card" style="width: 80%;">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Model Properties</p>
+      <button class="delete close" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="p-30">
+        <div class="columns is-mobile">
+          <div class="column" style="border-right: 1px solid #dbdbdb;">
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label n has-text-grey">Subject</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                  </div>
+                  <p class="help is-danger">
+                    This field is required
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label n has-text-grey">Subject</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label n has-text-grey">Subject</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="e.g. Partnership opportunity">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label n has-text-grey">Subject</label>
+              </div>
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <input class="input" type="text" placeholder="e.g. Partnership opportunity">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <article class="message is-warning">
+              <div class="message-header">
+                <p>Warning</p>
+              </div>
+              <div class="message-body has-text-grey">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. <span class="has-text-primary">Vestibulum rhoncus ac ex</span> sit amet fringilla. Nullam gravida purus diam, et dictum <a class="has-text-primary">felis venenatis</a> efficitur.
+              </div>
+            </article>
+            <div class="columns m-0">
+              <div class="column is-four-fifths has-text-grey p-l-0">
+                Lorem ipsum
+              </div>
+              <div class="column is-one-fifth tr">
+                <div class="field">
+                  <input id="toggleLights" type="checkbox" name="toggleLights" class="switch is-rounded" checked="checked">
+                  <label for="toggleLights"></label>
+                </div>
+              </div>
+            </div>
+            <div class="columns m-0">
+              <div class="column is-four-fifths has-text-grey p-l-0">
+                Lorem ipsum
+              </div>
+              <div class="column is-one-fifth tr">
+                <div class="field">
+                  <input id="toggleLights2" type="checkbox" name="toggleLights" class="switch is-rounded" checked="checked">
+                  <label for="toggleLights2"></label>
+                </div>
+              </div>
+            </div>
+            <div class="columns m-0">
+              <div class="column is-four-fifths has-text-grey p-l-0">
+                Lorem ipsum
+              </div>
+              <div class="column is-one-fifth tr">
+                <div class="field">
+                  <input id="toggleLights3" type="checkbox" name="toggleLights" class="switch is-rounded" checked="checked">
+                  <label for="toggleLights3"></label>
+                </div>
+              </div>
+            </div>
+            <div class="m-b-30 has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipis</div>
+            <div class="m-b-30">
+              <div class="has-text-grey">
+                Lorem ipsum
+              </div>
+              <input id="sliderWithValue7" class="slider has-output is-fullwidth m-0" min="0" max="100" value="50" step="1" type="range" style="width: 100%;">
+            </div>
+            <div class="m-b-30 has-text-grey-light">Lorem ipsum dolor sit amet, consectetur adipi</div>
+            <div class="m-b-30 has-text-primary">Lorem ipsum dolor sit amet, l</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot" style="justify-content: flex-end;">
+      <button class="button is-small is-rounded">Cancel</button>
+      <button class="button is-primary is-small is-rounded">SAVE</button>
+    </footer>
+  </div>
+</div>
+<div class="modal modal-upload">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
       <p class="modal-card-title">Model Upload</p>
-      <button class="delete" aria-label="close"></button>
+      <button class="delete close" aria-label="close"></button>
     </header>
     <section class="modal-card-body">
       <div class="p-30">
@@ -21,6 +145,7 @@
           <div class="p-30 has-text-grey">
             Drop your model <span class="has-text-primary">.obj .obj</span>
           </div>
+          <label for="toggleLights"></label>
           <a class="button is-primary is-rounded has-text-grey-dark is-small">CHOOSE</a>
         </div>
       </div>
@@ -356,8 +481,12 @@
 <script>
   $(() => {
     const $modalUpload = $('.modal-upload')
-    $modalUpload.find('.delete').click(() => {
+    const $modalProperties = $('.modal-properties')
+    $modalUpload.find('.close').click(() => {
       $modalUpload.toggleClass('is-active')
+    })
+    $modalProperties.find('.close').click(() => {
+      $modalProperties.toggleClass('is-active')
     })
     $('.open-modal-upload').click(() => {
       $modalUpload.toggleClass('is-active')
