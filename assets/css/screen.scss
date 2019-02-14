@@ -27,6 +27,12 @@ header{
 .bdb_light {
   border-bottom: 1px solid #a7a9ac;
 }
+.bdb_turquoise{
+  border-bottom: 1px solid $turquoise;
+}
+header.bdb_turquoise {
+  border-bottom: 2px solid $turquoise;
+}
 .bdb_f5f5f5{
   border-bottom: 1px solid #F5F5F5;
 }
@@ -35,6 +41,10 @@ header{
 }
 .bg_4A4A4A{
   background: #4A4A4A;
+}
+.card-login{
+  border: 10px solid #F6F7F7;
+  background: #F6F7F7;
 }
 .absolute-full{
   position: absolute;
@@ -215,10 +225,6 @@ header{
     }
   }
 }
-.model-card-title{
-  height: 43px;
-  overflow: hidden;
-}
 .model-upload-card{
   padding: 2px 0 1px 0;
 }
@@ -226,4 +232,86 @@ header{
   width: 180px;
   height: 17px;
   display: block;
+}
+.models{
+  img{
+    transition: all 0.5s;
+    &:hover{
+      transform: scale(1.2)
+    }
+  }
+}
+.menu-list{
+  a{
+    border-radius: 0;
+    &.active{
+      background: #E0F7F7;
+      color: $turquoise;
+      border-left: 4px solid $turquoise;
+    }
+    &:hover{
+      background: #E0F7F7;
+    }
+  }
+}
+.my-card{
+  .header-img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid $grey-lighter;
+    color: $grey;
+    overflow: hidden;
+    left: 65px;
+    top: -50px;
+  }
+}
+.upload-header{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 1px solid $grey-lighter;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  &:after{
+    content: '上传头像';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $grey-lighter;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+.field{
+  .tag.is-danger{
+    background: #FFDEDE;
+    color: $red;
+    border: 1px solid $red;
+  }
+}
+.model-config{
+  label{
+    width: 60px !important;
+  }
+}
+.model-author{
+  background: #F6F7F7;
+  .header-img{
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+    }
+  }
+}
+a.has-text-grey{
+  &:hover{
+    color: $turquoise !important;
+  }
 }
