@@ -6,6 +6,7 @@
   "author": "Petit Kero Pro <bigboss@hidoge.cn>",
   "license": "MIT",
   "scripts": {
+    "deploy": "node deploy.js deploy 4d-frontend",
     "dev": "browser-sync start --server --files \"**/*.css, **/*.html\"",
     "clean": "rimraf dist",
     "build": "yarn clean && mkdir -p dist/assets && cp -r assets dist/ && cp *.html dist"
@@ -16,6 +17,8 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3"
+    "browser-sync": "^2.26.3",
+    "commander": "^2.20.0",
+    "shelljs": "^0.8.3"
   }
 }
