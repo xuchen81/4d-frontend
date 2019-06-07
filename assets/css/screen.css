@@ -13043,4 +13043,20 @@ header.bdb_turquoise {
 a.has-text-grey:hover {
   color: #18C4C4 !important; }
 
+.face {
+  background: #fff url(../images/index_02.jpg) center center no-repeat;
+  background-size: auto 100%;
+  height: 720px; }
+
+.card-advantage {
+  margin-top: -81px; }
+  .card-advantage .item img {
+    height: 44px; }
+
+.bg_f7f8fc {
+  background: #f7f8fc !important; }
+
+.bg_000 {
+  background: #000 !important; }
+
 /*# sourceMappingURL=screen.css.map */
